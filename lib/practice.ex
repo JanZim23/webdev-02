@@ -18,7 +18,8 @@ defmodule Practice do
 
   def factor(x) do
     # Maybe delegate this too.
-    Practice.Factor.factor(x);
+    {num, _} = Integer.parse(x)
+    Practice.Factor.factor(num);
   end
 
   def palindrome(p) do
