@@ -21,7 +21,7 @@ defmodule Practice do
     Practice.Factor.factor(x);
   end
 
-  def paindrome?(p) do
+  def paindrome(p) do
       p == String.reverse(p)
   end
 
