@@ -22,7 +22,7 @@ defmodule PracticeWeb.PageController do
   end
 
   def palindrome(conn, %{"x" => x}) do
-    y = Practice.palindrome(x)
+    y = Enum.join(Practice.palindrome(x), ' ')
     render conn, "palindrome.html", x: x, y: y
   end
 end
